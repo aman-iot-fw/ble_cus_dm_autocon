@@ -49,7 +49,7 @@ void parseConfigData(uint8_t *Data) {
             memset(nvsConfigData.deviceName, 0, sizeof(nvsConfigData.deviceName));
             memcpy(nvsConfigData.deviceName, (Data + 4), sizeof(nvsConfigData.deviceName));
             if (strlen(nvsConfigData.deviceName) == dataLength) {
-                UART2_write(uart, "Ack", 3, NULL);
+                UART2_write(uart, "configuration updated", 21, NULL);
                 NVS_write(nvsHandle, MEM_BYTES, (void*)&nvsConfigData, sizeof(nvsConfigData), NVS_WRITE_ERASE | NVS_WRITE_POST_VERIFY);
             } else {
                 UART2_write(uart, "Nack", 4, NULL);
