@@ -270,7 +270,7 @@ void appMain(void)
     /* Call driver init functions */
     GPIO_init();
 
-//    uint32_t counterTarget;
+  uint32_t counterTarget;
 //     LGPTimerLPF3_Params params;
 //     LGPTimerLPF3_Params_init(&params);
 //     params.hwiCallbackFxn = timerCallback;
