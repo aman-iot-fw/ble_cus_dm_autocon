@@ -271,7 +271,7 @@ void appMain(void)
     GPIO_init();
 
   uint32_t counterTarget;
-//     LGPTimerLPF3_Params params;
+  LGPTimerLPF3_Params params;
 //     LGPTimerLPF3_Params_init(&params);
 //     params.hwiCallbackFxn = timerCallback;
 //     hTimer = LGPTimerLPF3_open(CONFIG_LGPTIMER_3, &params);
