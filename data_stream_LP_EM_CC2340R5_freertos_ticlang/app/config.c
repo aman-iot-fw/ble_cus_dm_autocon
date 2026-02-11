@@ -108,6 +108,5 @@ void Config_init(void)
 
     swapedConfigData.passKey=swapBytes(nvsConfigData.passKey);
     swapedConfigData.timeOut=swapBytes(nvsConfigData.timeOut);
-//    swapedConfigData.deviceName=nvsConfigData.deviceName;
 }
 
